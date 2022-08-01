@@ -24,17 +24,17 @@ addLayer("n", {
     achievements: {
         11: {
             name: "Blah",
-            more features
+            tooltip: "Buy <h2>Blah</h2>",
+            done(){return hasUpgrade(this.layer,11)}
         },
     },
     upgrades: {
     11: {
+        name: "Blah",
         description: "Blah",
         cost: new Decimal(100),
-        etc
     },
-    etc
-}
+    },
     hotkeys: [
         {},
     ],
