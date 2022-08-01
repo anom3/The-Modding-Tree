@@ -4,11 +4,11 @@ addLayer("n", {
     position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
     startData() { return {
         unlocked: true,
-		points: new Decimal(0),
+		points: new Decimal("eeeeeeeeeeee1e308"), // Basically, all of them.
     }},
     color: "#4BDC13",
     requires: new Decimal(10), // Can be a function that takes requirement increases into account
-    resource: "stars", // Name of prestige currency
+    resource: "Normal Points", // Name of prestige currency
     baseResource: "points", // Name of resource prestige is based on
 //  baseAmount() {return player.points}, // Get the current amount of baseResource
     type: "none", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have. none: can't reset this layer.
