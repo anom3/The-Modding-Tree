@@ -35,8 +35,19 @@ addLayer("n", {
             cost: new Decimal(100),
         },
         12: {
+            title(){return hasUpgrade(this.layer, 11)?"Namer(sell)":"Sell"},
             description: "Names upgrades.",
             cost: new Decimal(100),
+            onPurchase(){
+                var index = array.indexOf(11);
+                if (index !== -1) {
+                  array.splice(index, 1);
+                }
+                vindex = array.indexOf(12);
+                if (index !== -1) {
+                  array.splice(index, 1);
+                }
+            }
         },
     },
     hotkeys: [
