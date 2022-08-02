@@ -34,9 +34,8 @@ addLayer("n", {
             description: "Names upgrades.",
             cost: new Decimal(100),
         },
-        11: {
-            title: "Blah",
-            description: "Blah",
+        12: {
+            description: "Names upgrades.",
             cost: new Decimal(100),
         },
     },
