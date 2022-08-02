@@ -24,7 +24,7 @@ addLayer("n", {
     achievements: {
         11: {
             name: "Blah",
-            tooltip: "Buy <h2>Blah</h2>",
+            tooltip: "Buy <b>Blah</b>",
             done(){return hasUpgrade(this.layer,11)}
         },
     },
