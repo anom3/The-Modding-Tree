@@ -30,7 +30,7 @@ addLayer("n", {
     },
     upgrades: {
     11: {
-        name: "Blah",
+        title: "",
         description: "Blah",
         cost: new Decimal(100),
     },
