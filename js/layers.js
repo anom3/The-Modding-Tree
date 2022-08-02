@@ -25,15 +25,20 @@ addLayer("n", {
         11: {
             name: "Blah",
             tooltip: "Buy <b>Blah</b>",
-            done(){return hasUpgrade(this.layer,11)}
+            done(){return hasUpgrade(this.layer,12)}
         },
     },
     upgrades: {
-    11: {
-        title: "",
-        description: "Blah",
-        cost: new Decimal(100),
-    },
+        11: {
+            title(){return hasUpgrade(this.layer, 11)?"Namer":""},
+            description: "Names upgrades.",
+            cost: new Decimal(100),
+        },
+        11: {
+            title: "Blah",
+            description: "Blah",
+            cost: new Decimal(100),
+        },
     },
     hotkeys: [
         {},
