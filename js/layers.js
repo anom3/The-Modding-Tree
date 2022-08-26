@@ -20,6 +20,34 @@ addLayer("p", {
     gainExp() { // Calculate the exponent on main currency from bonuses
         return new Decimal(1)
     },
+    challenges: {
+        11:{
+            name: "Ouch 1",
+            challengeDescription: "OK",
+            goalDescription: "OK",
+            canComplete() {return +player.completionsLeft},
+            rewardDescription: "OK",
+
+        },
+        12:{
+            name: "Ouch 2",
+            challengeDescription: "OK",
+            goalDescription: "OK",
+            canComplete() {return +player.completionsLeft},
+            rewardDescription: "OK",
+            completionLimit: 10
+
+        },
+        21:{
+            name: "Ouch 3",
+            challengeDescription: "OK",
+            goalDescription: "OK",
+            canComplete() {return +player.completionsLeft},
+            rewardDescription: "OK",
+            completionLimit: Infinity
+
+        }
+    },
     row: 0, // Row the layer is in on the tree (0 is the first row)
     hotkeys: [
         {key: "p", description: "P: Reset for prestige points", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
