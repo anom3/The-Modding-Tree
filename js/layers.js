@@ -23,7 +23,7 @@ addLayer("p", {
     challenges: {
         11:{
             name: "Ouch 1",
-            challengeDescription: "OK",
+            challengeDescription: "Makes the game 0% harder",
             goalDescription: "OK",
             canComplete() {return +player.completionsLeft},
             rewardDescription: "OK",
@@ -31,7 +31,9 @@ addLayer("p", {
         },
         12:{
             name: "Ouch 2",
-            challengeDescription: "OK",
+            challengeDescription() {
+                return "Makes the game 0% harder<br>Completions: "+formatWhole(challengeCompletions("p",12))+"/10"
+            },
             goalDescription: "OK",
             canComplete() {return +player.completionsLeft},
             rewardDescription: "OK",
@@ -40,7 +42,9 @@ addLayer("p", {
         },
         21:{
             name: "Ouch 3",
-            challengeDescription: "OK",
+            challengeDescription() {
+                return "Makes the game 0% harder<br>Completions: "+formatWhole(challengeCompletions("p",21))
+            },
             goalDescription: "OK",
             canComplete() {return +player.completionsLeft},
             rewardDescription: "OK",
