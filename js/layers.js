@@ -23,7 +23,7 @@ addLayer("p", {
     ugprades:{
         11: {
             description: "Hi",
-            cost: new Decimal(0)
+            cost: new Decimal(0),
         }
     },
     row: 0, // Row the layer is in on the tree (0 is the first row)
