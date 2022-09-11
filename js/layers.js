@@ -24,7 +24,7 @@ addLayer("p", {
         11: {
             title: "OK",
             description: "Hi",
-            cost: new Decimal(0),
+            cost: new Decimal(1),
         }
     },
     row: 0, // Row the layer is in on the tree (0 is the first row)
