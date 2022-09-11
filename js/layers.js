@@ -22,6 +22,7 @@ addLayer("p", {
     },
     ugprades:{
         11: {
+            title: "OK",
             description: "Hi",
             cost: new Decimal(0),
         }
