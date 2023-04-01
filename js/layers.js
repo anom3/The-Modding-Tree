@@ -20,12 +20,38 @@ addLayer("p", {
     gainExp() { // Calculate the exponent on main currency from bonuses
         return new Decimal(1)
     },
-    ugprades:{
+    upgrades:{
         11: {
             title: "OK",
-            description: "Hi",
-            cost: new Decimal(1),
-        }
+            cost: new Decimal(0),
+        },
+        12: {
+            title: "OK",
+            cost: new Decimal(0),
+        },
+        13: {
+            title: "OK",
+            cost: new Decimal(0),
+        },
+        14: {
+            title: "OK",
+            cost: new Decimal(0),
+        },
+        21: {
+            title: "OK",
+            cost: new Decimal(0),
+        },
+        22: {
+            title: "OK",
+            cost: new Decimal(0),
+            style: {
+                width: "240px"
+            }
+        },
+        23: {
+            title: "OK",
+            cost: new Decimal(0),
+        },
     },
     row: 0, // Row the layer is in on the tree (0 is the first row)
     hotkeys: [
